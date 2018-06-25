@@ -6,6 +6,7 @@
 // Dependencies
 const http = require('http');
 const url = require('url');
+const path = require('path');
 
 let StringDecoder = require('string_decoder').StringDecoder;
 
@@ -62,6 +63,7 @@ let server = http.createServer(function (req, res) {
       let payloadString = JSON.stringify(payload);
 
       // Return the response
+      res.setHeader('Content-Type', 'application/json');
       res.writeHead(statusCode);
       res.end(payloadString);
 
@@ -74,7 +76,7 @@ let server = http.createServer(function (req, res) {
 });
 
 // Start the server
-server.listen(3000, function () {
+server.listen(8080, function () {
   console.log('The server is up and running now');
 });
 
@@ -93,5 +95,5 @@ handlers.notFound = function (data, callback) {
 
 // Define the request router
 let router = {
-  'sample': handlers.sample
+  'sample': handlers.sample,
 };
