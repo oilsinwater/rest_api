@@ -1,7 +1,6 @@
 
 
 // Object container for exporting all the environments
-
 let environments = {};
 
 
