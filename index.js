@@ -7,6 +7,7 @@
 const http = require('http');
 const url = require('url');
 const path = require('path');
+const config = require('./config');
 
 let StringDecoder = require('string_decoder').StringDecoder;
 
@@ -75,9 +76,9 @@ let server = http.createServer(function (req, res) {
   });
 });
 
-// Start the server
-server.listen(8080, function () {
-  console.log('The server is up and running now');
+// Start the server 
+server.listen(config.port, function () {
+  console.log('The server is up and running now on port ' + config.port + ' in ' + config.envName + ' mode');
 });
 
 // Define all the handlers

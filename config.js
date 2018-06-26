@@ -12,7 +12,7 @@ environments.staging = {
 
 // Production environment
 environments.production = {
-    'port' : 3000,
+    'port' : 5000,
     'envName' : 'production'
 };
 
