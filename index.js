@@ -8,11 +8,18 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 const url = require('url');
+let StringDecoder = require('string_decoder').StringDecoder;
 const path = require('path');
 const config = require('./config');
+const _data = require('./lib/data');
 
-let StringDecoder = require('string_decoder').StringDecoder;
 
+
+// Testing
+// @TODO delete this
+_data.read('test', 'newFile', {'foo' : 'bar'}, function(err) {
+  console.log('this was the error', err);
+});
 // Instantiate the HTTP server
 let httpServer = http.createServer(function (req, res) {
   unifiedServer(req, res);
