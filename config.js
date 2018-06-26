@@ -6,8 +6,8 @@ let environments = {};
 
 // Staging (default) environment
 environments.staging = {
-    'httpPort' : 3000,
-    'httpsPort' : 3001,
+    'httpPort' : 8000,
+    'httpsPort' : 8001,
     'envName' : 'staging'
 };
 
