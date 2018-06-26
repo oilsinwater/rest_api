@@ -17,7 +17,7 @@ const _data = require('./lib/data');
 
 // Testing
 // @TODO delete this
-_data.update('test', 'newFile', {'fizz' : 'buzz'} , function(err) {
+_data.delete('test', 'newFile', function(err) {
   console.log('this was the error', err);
 });
 // Instantiate the HTTP server
