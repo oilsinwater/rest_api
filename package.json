@@ -1,0 +1,28 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "pure node.js web-app",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oilsinwater/rest_api.git"
+  },
+  "author": "Philliph Drummond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oilsinwater/rest_api/issues"
+  },
+  "homepage": "https://github.com/oilsinwater/rest_api#readme",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "ts-node": "^7.0.0"
+  }
+}

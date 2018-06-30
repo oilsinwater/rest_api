@@ -9,8 +9,8 @@ const https = require('https');
 const url = require('url');
 let StringDecoder = require('string_decoder').StringDecoder;
 const path = require('path');
-const config = require('./config');
 const fs = require('fs');
+const config = require('./config');
 
 
 // Instantiate the HTTP server
